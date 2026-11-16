@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Main Page</title>
+		<meta name="robots" content="noindex, nofollow, noimageindex">
+		<link rel="stylesheet" href="./Style.css">
+	</head>
+	<body>
+		<nav>
+        	<a href="./index.html"class="active">Home</a>
+        	<a href="./Page/PhysicsOlympics.html">UBC Physics Olympics</a>
+			<a href="./Page/KPUScience.html">KPU Science Challenge</a>
+			<a href="./Page/BCSEGBridge.html">BCSEG Bridge Building Contest</a>
+			<a href="./Page/GeeringUp.html">UBC Geering up</a>
+	    </nav>
+
+	<!--Page-->
+		<div class="content-box1">
+			<div class="container1">
+				<!--me-->
+				<div class="image0"><img width="240" height="275" src="./Assets/Update-11-14-2026/Profile.jpeg"></div>
+
+				<div class="content0">
+					<h2> Hello, My name is Michael L</h2>
+					<h3> and this is my portfolio </h3>
+				</div>
+				<!--skills-->
+				<div class="headerx">
+					<ol>
+						<il><p>Able to code in Python and HTML5</p></il>
+						<il><p>Able to use Github Action with yml</p></il>
+						<il><p>Able to build desktop computers</p></il>
+						<il><p>Able to work in a team and independently</p></il>
+					</ol>
+				</div>
+			<!--Education-->
+				<div class="header2">
+					<h2> Education </h2>
+				</div>
+				<div class="image1"><img width="220" height="200" src="./Assets/Update-11-14-2026/RHS.png"></div>
+				<div class="content1">
+					<h3>February 2024 - Current </h3>
+					<p>	Grade 9 - Grade 12</p>
+					<h4>Received a Honor-roll in Grade 11</h4>
+					<a href="https://en.wikipedia.org/wiki/Richmond_Secondary_School" target="_blank" rel="noopener noreferrer">Richmond Secondary School, (commonly, Richmond High School, RHS, and RSS) is a public, co-educational secondary school located in Richmond, British Columbia, Canada. It educates approximately 1200 students from grades 8 to 12. Richmond Secondary is the only school in Richmond that offers the International Baccalaureate Diploma Programme and is a magnet school in the region</a>
+				</div>
+				<div class="image2"><img width="220" height="100" src="./Assets/Update-11-14-2026/DSC.png"></div>
+				<div class="content2">
+					<h3>September 2021 - November 2023</h3>
+					<p>Grade 7 - Grade 9 </p>
+					<a href="https://en.wikipedia.org/wiki/DSC_International_School,_Hong_Kong" target="_blank" rel="noopener noreferrer">DSC International School (Chinese: 德思齊加拿大國際學校), formerly the Delia School of Canada, is a Canadian private school in Hong Kong, China. The school was founded in 1986 which offers Ontario curriculum (registered in the province of Ontario as an international private school). It has students from over 50 countries and offers kindergarten, primary and secondary education in three separate buildings. The school was first intended as a local school for the new residential development in Taikoo Shing.</a>
+
+				</div>
+			</div>
+		</div>
+		<script>
+    		const items = document.querySelectorAll(".content-box1 h2, .content-box1 h3, .content-box1 p, .content-box1 li, .content-box1 a, .content-box1 img, .content-box1 iframe, .content-box1 video, .content-box1 embed, .content-box1 object, " + ".content-box2 h2, .content-box2 h3, .content-box2 p, .content-box2 li, .content-box2 a, .content-box2 img, .content-box2 iframe, .content-box2 video, .content-box2 embed, .content-box2 object");
+    		const observer = new IntersectionObserver((entries) => {entries.forEach((entry) => {if (entry.isIntersecting) {entry.target.classList.add("fade-in");}});}, { threshold: 0.1 });
+    		items.forEach((item) => observer.observe(item));
+  		</script>
+	</body>
+</html>
